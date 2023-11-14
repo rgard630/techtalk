@@ -1,0 +1,28 @@
+{{!< ../layouts/main}}
+
+{{#content "main"}}
+  <h1>Welcome to My Tech Blog</h1>
+
+  {{!-- Display existing blog posts --}}
+  <div class="blog-posts">
+    {{#each posts}}
+      <div class="post">
+        <h2>{{this.title}}</h2>
+        <p>Published on {{this.createdAt}}</p>
+        <p>{{this.body}}</p>
+        <a href="/posts/{{this.id}}">Read more</a>
+      </div>
+    {{/each}}
+  </div>
+
+  {{!-- Check if the user is logged in --}}
+  {{#if isLoggedIn}}
+    {{!-- If logged in, show dashboard and logout link --}}
+    <a href="/dashboard">Dashboard</a>
+    <a href="/logout">Logout</a>
+  {{else}}
+    {{!-- If not logged in, show login/signup options --}}
+    <a href="/login">Login</a>
+    <a href="/signup">Signup</a>
+  {{/if}}
+{{/content}}

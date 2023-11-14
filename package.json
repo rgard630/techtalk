@@ -1,0 +1,30 @@
+{
+    "name": "your-blog-app",
+    "version": "1.0.0",
+    "description": "A CMS-style blog site for developers",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "express": "^4.17.1",
+      "express-handlebars": "^5.3.3",
+      "sequelize": "^6.6.5",
+      "mysql2": "^2.3.0",
+      "dotenv": "^10.0.0",
+      "bcrypt": "^5.0.1",
+      "express-session": "^1.17.2",
+      "connect-session-sequelize": "^7.1.7"
+    },
+    "engines": {
+      "node": ">=14.0.0"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/your-username/your-blog-app.git"
+    },
+    "license": "MIT",
+    "author": "Your Name <your@email.com>"
+  }
+  
+  

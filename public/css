@@ -1,0 +1,94 @@
+/* Reset default margin and padding */
+body,
+html,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a basic box-sizing for all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Basic styles for header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #444;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Styles for main content area */
+.main-content {
+  margin: 20px;
+}
+
+/* Styles for blog posts */
+.blog-post {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.blog-post h2 {
+  margin-bottom: 10px;
+}
+
+.blog-post p {
+  line-height: 1.5;
+}
+
+/* Styles for forms */
+form {
+  margin-bottom: 20px;
+}
+
+input[type='text'],
+input[type='password'],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+input[type='submit'] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
